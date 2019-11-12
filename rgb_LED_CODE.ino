@@ -13,8 +13,6 @@ void loop()  {
   delay(1000);
   RGB_Color(0, 0, 255); //blue
   delay(1000);
-  RGB_Color(239,80,0); //
-  delay(1000);
 }
 void RGB_Color(int red_value, int green_value, int blue_value)
 {
