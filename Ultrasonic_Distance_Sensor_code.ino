@@ -2,8 +2,6 @@ int distanceThreshold = 0;
 
 int cm = 0;
 
-int inches = 0;
-
 long readUltrasonicDistance(int triggerPin, int echoPin)
 {
   pinMode(triggerPin, OUTPUT);  // Clear the trigger
@@ -35,7 +33,6 @@ void loop()
   cm = 0.01723 * readUltrasonicDistance(7, 6);
   // eða maður getur sleppt inches
   // convert to inches by dividing by 2.54
-  inches = (cm / 2.54);
   Serial.print(cm);
   Serial.print("cm, ");
   if (cm > distanceThreshold) {
