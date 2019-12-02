@@ -38,8 +38,6 @@ void loop()
   inches = (cm / 2.54);
   Serial.print(cm);
   Serial.print("cm, ");
-  Serial.print(inches);
-  Serial.println("in");
   if (cm > distanceThreshold) {
     digitalWrite(2, LOW);
     digitalWrite(3, LOW);
